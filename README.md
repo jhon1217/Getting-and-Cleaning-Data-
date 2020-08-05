@@ -1,4 +1,6 @@
-Goal of the Project
+# Getting and Cleaning Data Project
+
+## Goal of the Project
 
    1.A tidy data set
    
@@ -8,3 +10,13 @@ Goal of the Project
    You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
    
    4.Analysis R Script
+
+## Review Criteria
+
+## Analysis R Script  run_analysis.R 
+
+## Tidy Data Set   Clean Data Set  
+
+## Cookbook  CodeBook.md  
+
+## README  ReadingItNow  
