@@ -1,18 +1,24 @@
-Información del conjunto de datos
+ Description
 
-Los experimentos se llevaron a cabo con un grupo de 30 voluntarios dentro de un rango de edad de 19-48 años. Cada persona realizó seis actividades (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) usando un teléfono inteligente (Samsung Galaxy S II) en la cintura. Usando su acelerómetro y giroscopio integrados, capturamos la aceleración lineal 3-axial y la velocidad angular 3-axial a una velocidad constante de 50Hz. Los experimentos se grabaron en video para etiquetar los datos manualmente. El conjunto de datos obtenido se ha dividido aleatoriamente en dos conjuntos, donde se seleccionó el 70% de los voluntarios para generar los datos de entrenamiento y el 30% de los datos de la prueba.
+Additional information about the variables, data and transformations used in the course project for the Johns Hopkins Getting and Cleaning Data course.
+Source Data
 
-Las señales del sensor (acelerómetro y giroscopio) se preprocesaron aplicando filtros de ruido y luego se tomaron muestras en ventanas corredizas de ancho fijo de 2.56 segundos y 50% de superposición (128 lecturas / ventana). La señal de aceleración del sensor, que tiene componentes gravitacionales y de movimiento corporal, se separó usando un filtro de paso bajo Butterworth en aceleración corporal y gravedad. Se supone que la fuerza gravitacional solo tiene componentes de baja frecuencia, por lo tanto, se utilizó un filtro con una frecuencia de corte de 0.3 Hz. De cada ventana, se obtuvo un vector de características calculando variables del dominio del tiempo y la frecuencia.
+Data + Description can be found here UCI Machine Learning Repository
+Data Set Information
 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
-Para cada registro en el conjunto de datos se proporciona:
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+Attribute Information
 
-   -Aceleración triaxial del acelerómetro (aceleración total) y la aceleración corporal estimada.
-   
-   -Velocidad angular triaxial desde el giroscopio.
+For each record in the dataset it is provided:
+
+    Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
     
-   -Un vector de características 561 con variables de dominio de tiempo y frecuencia.
+    Triaxial Angular velocity from the gyroscope.
     
-   -Su etiqueta de actividad.
+    A 561-feature vector with time and frequency domain variables.
     
-   -Un identificador del sujeto que realizó el experimento.
+    Its activity label.
+    
+    An identifier of the subject who carried out the experiment.
